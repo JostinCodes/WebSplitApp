@@ -33,7 +33,7 @@ struct ContentView: View {
         NavigationView{        VStack{
             Form{
                 Section{
-                    Text("Check Amount")
+                    Text("Check Out Amount")
                     TextField("Amount", value:$checkamt,format:.currency(code: Locale.current.currencyCode ?? "USD")).keyboardType(.decimalPad)
                 }.focused($amountf)
                 Section{
